@@ -16,5 +16,5 @@ func main(){
 	dua = tiga
 	tiga = temp
 
-	fmt.Println("Output akhir" + satu + " " + dua + " " + tiga)
+	fmt.Println("Output akhir : " + satu + " " + dua + " " + tiga)
 }
