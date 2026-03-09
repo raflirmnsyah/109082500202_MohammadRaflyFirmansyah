@@ -7,16 +7,16 @@ func main() {
 
 	fmt.Print("Masukkan total berat (gram): ")
 	fmt.Scan(&berat)
-
+	
 	kg := berat / 1000
 	gram := berat % 1000
 
 	biayaKg := kg * 10000
 
-	if gram < 500 {
-		biayaGram = gram * 15
+	if gram >= 500 {
+		biayaGram = 2500
 	} else {
-		biayaGram = 0
+		biayaGram = gram * 15
 	}
 
 	total := biayaKg + biayaGram
